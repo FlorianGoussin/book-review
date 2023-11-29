@@ -11,10 +11,7 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import {
-	useBlockProps,
-	RichText
-} from '@wordpress/block-editor';
+import { useBlockProps } from '@wordpress/block-editor';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -32,9 +29,6 @@ import './editor.scss';
  *
  * @return {Element} Element to render.
  */
-// import { useSelect } from "@wordpress/data";
-// import { useState } from '@wordpress/element';
-
 import { TextControl, TextareaControl } from '@wordpress/components';
 
 export default function Edit(props) {
@@ -54,33 +48,13 @@ export default function Edit(props) {
 
 	return (
 		<div {...blockProps}>
-			{/* <h3>{__('Book Review Title', 'fgc-blocks')}</h3>
-			<RichText
-				tagName="h2"
-				placeholder={__(
-					'Write a title for the book review',
-					'fgc-blocks'
-				)}
-				value={bookReviewTitle}
-				onChange={handleTitleChange}
-			/>
-			<h3>{__('Book Review Content', 'fgc-blocks')}</h3>
-			<RichText
-				tagName="h2"
-				placeholder={__(
-					'Write the book review',
-					'fgc-blocks'
-				)}
-				value={bookReviewContent}
-				onChange={handleContentChange}
-			/> */}
 			<TextControl
-				label="Book Review Title"
+				label={__('Book Review Title', 'fgc-blocks')}
 				value={bookReviewTitle}
 				onChange={handleTitleChange}
 			/>
 			<TextareaControl
-				label="Book Review"
+				label={__('Book Review', 'fgc-blocks')}
 				value={bookReviewContent}
 				onChange={handleContentChange}
 			/>
