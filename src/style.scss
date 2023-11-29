@@ -4,9 +4,42 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
+:root {
+	--fgc-blocks-sea-green: 112, 153, 130;
+	--fgc-blocks-sea-blue: 13, 78, 96;
+}
 
 .wp-block-fgc-blocks-book-review {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+	margin: 0.75rem 0;
+	padding: 1rem 2rem;
+
+	blockquote,
+	cite {
+		font-family: 'queulatcndsoft-regular', courier;
+	}
+
+	blockquote {
+		border-left: 5px solid rgb(var(--fgc-blocks-sea-green), 0.5);
+		margin-bottom: 0.25rem;
+		margin: 0 0 .5rem;
+		padding: 0 25px;
+		width: fit-content;
+		font-size: 1em;
+		line-height: 1, 4;
+		font-weight: 100;
+		font-style: italic;
+	}
+
+	blockquote,
+	.separator {
+		color: #6A6A6A;
+	}
+
+	cite {
+		line-height: 3;
+		text-align: left;
+		border-bottom: 2px solid rgb(var(--fgc-blocks-sea-green), 0.5);
+		font-style: normal;
+		font-size: 0.9rem;
+	}
 }
