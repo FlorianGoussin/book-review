@@ -8,7 +8,14 @@
 	"icon": "schedule",
 	"category": "widgets",
 	"keywords": [ "book", "review" ],
-	"attributes": {},
+	"attributes": {
+		"bookReviewTitle": {
+			"type": "string"
+		},
+		"bookReviewContent": {
+			"type": "string"
+		}
+	},
 	"example": {},
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",

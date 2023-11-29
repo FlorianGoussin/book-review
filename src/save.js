@@ -4,7 +4,10 @@
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { useBlockProps } from '@wordpress/block-editor';
+import {
+	useBlockProps,
+	RichText
+} from '@wordpress/block-editor';
 
 /**
  * The save function defines the way in which the different attributes should
@@ -15,10 +18,17 @@ import { useBlockProps } from '@wordpress/block-editor';
  *
  * @return {Element} Element to render.
  */
-export default function save() {
+export default function save(props) {
+	const {
+		attributes: { bookReviewTitle, bookReviewContent },
+	} = props;
+
+	const blockProps = useBlockProps.save();
+
 	return (
-		<p {...useBlockProps.save()}>
-			{'Fgc Book Review – hello from the saved content!'}
-		</p>
+		<div {...blockProps}>
+			<RichText.Content tagName="h2" value={bookReviewTitle} />
+			<RichText.Content tagName="h2" value={bookReviewContent} />
+		</div>
 	);
 }
