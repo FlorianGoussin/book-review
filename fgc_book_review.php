@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function fgc_book_review_fgc_book_review_block_init() {
+function fgc_blocks_book_review_block_init() {
 	register_block_type( __DIR__ . '/build' );
 }
-add_action( 'init', 'fgc_book_review_fgc_book_review_block_init' );
+add_action( 'init', 'fgc_blocks_book_review_block_init' );

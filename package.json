@@ -1,9 +1,9 @@
 {
 	"name": "fgc_book_review",
 	"version": "0.1.0",
-	"description": "Example block scaffolded with Create Block tool.",
-	"author": "The WordPress Contributors",
-	"license": "GPL-2.0-or-later",
+	"description": "Book Review block plugin for a wordpress site.",
+	"author": "Florian Goussin",
+	"license": "MIT",
 	"main": "build/index.js",
 	"scripts": {
 		"build": "wp-scripts build",
