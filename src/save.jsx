@@ -25,7 +25,9 @@ export default function save(props) {
 	return (
 		<div {...blockProps} class="book-review">
 			<div class="book-review_content">
-				<blockquote>{bookReviewContent}</blockquote> <span className="separator">-</span> <cite>{bookReviewTitle}</cite>
+				<blockquote>{bookReviewContent}</blockquote>
+				&nbsp;<span className="separator">-</span>&nbsp;
+				<cite>{bookReviewTitle}</cite>
 			</div>
 		</div>
 	)

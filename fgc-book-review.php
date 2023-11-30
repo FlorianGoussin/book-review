@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name:       Fgc Book Review
+ * Plugin Name:       Book Review
  * Description:       Book Review Block
  * Requires PHP:      7.4
  * Version:           0.1.0
- * Author:            Florian Goussin
+ * Author:            Florian Goussin - FGC
  * Text Domain:       fgc_book_review
  *
  * @package           fgc-blocks
